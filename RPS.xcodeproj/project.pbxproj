@@ -13,6 +13,8 @@
 		B554AF922572E40B0046772B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B554AF902572E40B0046772B /* Main.storyboard */; };
 		B554AF942572E4100046772B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B554AF932572E4100046772B /* Assets.xcassets */; };
 		B554AF972572E4100046772B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B554AF952572E4100046772B /* LaunchScreen.storyboard */; };
+		B554AFA02572E4490046772B /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B554AF9F2572E4490046772B /* Sign.swift */; };
+		B554AFA42572E5E80046772B /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B554AFA32572E5E80046772B /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B554AF932572E4100046772B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B554AF962572E4100046772B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B554AF982572E4100046772B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B554AF9F2572E4490046772B /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		B554AFA32572E5E80046772B /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		B554AF892572E40B0046772B /* RPS */ = {
 			isa = PBXGroup;
 			children = (
+				B554AF9F2572E4490046772B /* Sign.swift */,
+				B554AFA32572E5E80046772B /* GameState.swift */,
 				B554AF8A2572E40B0046772B /* AppDelegate.swift */,
 				B554AF8C2572E40B0046772B /* SceneDelegate.swift */,
 				B554AF8E2572E40B0046772B /* ViewController.swift */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B554AF8F2572E40B0046772B /* ViewController.swift in Sources */,
+				B554AFA02572E4490046772B /* Sign.swift in Sources */,
+				B554AFA42572E5E80046772B /* GameState.swift in Sources */,
 				B554AF8B2572E40B0046772B /* AppDelegate.swift in Sources */,
 				B554AF8D2572E40B0046772B /* SceneDelegate.swift in Sources */,
 			);

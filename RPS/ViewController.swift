@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     func updateUI(for gameState: GameState) {
         gameStatus.text = gameState.text
-        view.backgroundColor = UIColor(cgColor: gameState.color)
+        view.backgroundColor = gameState.color
         if gameState == .start {
             appSign.text = "👽"
             playAgainButton.isHidden = true

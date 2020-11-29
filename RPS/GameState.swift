@@ -24,16 +24,16 @@ enum GameState {
         }
     }
 
-    var color: CGColor {
+    var color: UIColor {
         switch self {
         case .start:
-            return CGColor(red: CGFloat(0.8), green: CGFloat(0.8), blue: CGFloat(0.8), alpha: CGFloat(1))
+            return UIColor.darkGray
         case .draw:
-            return CGColor(red: CGFloat(1), green: CGFloat(0), blue: CGFloat(1), alpha: CGFloat(1))
+            return UIColor.purple
         case .lose:
-            return CGColor(red: CGFloat(1), green: CGFloat(0), blue: CGFloat(0), alpha: CGFloat(1))
+            return UIColor.red
         case .win:
-            return CGColor(red: CGFloat(0), green: CGFloat(1), blue: CGFloat(0), alpha: CGFloat(1))
+            return UIColor.green
         }
     }
 }

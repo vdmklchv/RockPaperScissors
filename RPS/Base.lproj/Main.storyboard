@@ -82,10 +82,10 @@
                     <connections>
                         <outlet property="appSign" destination="zpC-WL-22s" id="Zd6-4q-SAk"/>
                         <outlet property="gameStatus" destination="hnf-N7-p4x" id="g7j-5m-J4B"/>
-                        <outlet property="paperButton" destination="tCo-WX-VTe" id="OY7-yU-rDu"/>
-                        <outlet property="playAgainButton" destination="y9n-a9-l4w" id="n4y-DI-crw"/>
-                        <outlet property="rockButton" destination="EL8-uW-GFd" id="qYH-x3-CvI"/>
-                        <outlet property="scissorsButton" destination="JPZ-Oe-KPJ" id="KIL-KG-fVp"/>
+                        <outletCollection property="uiButtons" destination="EL8-uW-GFd" collectionClass="NSMutableArray" id="nBS-ee-DVL"/>
+                        <outletCollection property="uiButtons" destination="tCo-WX-VTe" collectionClass="NSMutableArray" id="nsY-8L-347"/>
+                        <outletCollection property="uiButtons" destination="JPZ-Oe-KPJ" collectionClass="NSMutableArray" id="Nd0-Gi-qK9"/>
+                        <outletCollection property="uiButtons" destination="y9n-a9-l4w" collectionClass="NSMutableArray" id="fvn-tN-gPd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

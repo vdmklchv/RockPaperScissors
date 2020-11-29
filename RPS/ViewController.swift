@@ -11,10 +11,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var appSign: UILabel!
     @IBOutlet weak var gameStatus: UILabel!
-    @IBOutlet weak var rockButton: UIButton!
-    @IBOutlet weak var paperButton: UIButton!
-    @IBOutlet weak var scissorsButton: UIButton!
-    @IBOutlet weak var playAgainButton: UIButton!
+//    @IBOutlet weak var rockButton: UIButton!
+//    @IBOutlet weak var paperButton: UIButton!
+//    @IBOutlet weak var scissorsButton: UIButton!
+//    @IBOutlet weak var playAgainButton: UIButton!
+    
+    
+ 
+    @IBOutlet var uiButtons: [UIButton]!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +47,13 @@ class ViewController: UIViewController {
         view.backgroundColor = gameState.color
         if gameState == .start {
             appSign.text = "👽"
-            playAgainButton.isHidden = true
-            rockButton.isHidden = false
-            paperButton.isHidden = false
-            scissorsButton.isHidden = false
-            rockButton.isEnabled = true
-            paperButton.isEnabled = true
-            scissorsButton.isEnabled = true
+            uiButtons[3].isHidden = true
+            uiButtons[0].isHidden = false
+            uiButtons[1].isHidden = false
+            uiButtons[2].isHidden = false
+            uiButtons[0].isEnabled = true
+            uiButtons[1].isEnabled = true
+            uiButtons[2].isEnabled = true
         } 
     }
     
@@ -57,21 +62,21 @@ class ViewController: UIViewController {
         let currentGameState = playerSign.compareSign(to: randomAppSign)
         updateUI(for: currentGameState)
         appSign.text = randomAppSign.signImage
-        rockButton.isEnabled = false
-        paperButton.isEnabled = false
-        scissorsButton.isEnabled = false
+        uiButtons[0].isEnabled = false
+        uiButtons[1].isEnabled = false
+        uiButtons[2].isEnabled = false
         switch playerSign {
         case .rock:
-            paperButton.isHidden = true
-            scissorsButton.isHidden = true
+            uiButtons[1].isHidden = true
+            uiButtons[2].isHidden = true
         case .paper:
-            rockButton.isHidden = true
-            scissorsButton.isHidden = true
+            uiButtons[0].isHidden = true
+            uiButtons[2].isHidden = true
         case .scissors:
-            rockButton.isHidden = true
-            paperButton.isHidden = true
+            uiButtons[0].isHidden = true
+            uiButtons[1].isHidden = true
         }
-        playAgainButton.isHidden = false
+        uiButtons[3].isHidden = false
     }
 
 }
